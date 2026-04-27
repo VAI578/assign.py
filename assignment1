@@ -1,32 +1,26 @@
 # Task 1: Perform Basic Mathematical Operations
 
-try:
+# Step 1: Take input from user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
+# Step 2: Perform operations
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
 
-  
-    addition = num1 + num2
-    subtraction = num1 - num2
-    multiplication = num1 * num2
+# Handle division safely
+if num2 != 0:
+    division = num1 / num2
+else:
+    division = "Undefined (cannot divide by zero)"
 
-   
-    if num2 != 0:
-        division = num1 / num2
-    else:
-        division = "Undefined (cannot divide by zero)"
-
-   
-    print("\nResults:")
-    print("Addition:", addition)
-    print("Subtraction:", subtraction)
-    print("Multiplication:", multiplication)
-    print("Division:", division)
-
-    
-except ValueError:
-    print("Invalid input! Please enter numeric values only.")
-
+# Step 3: Display results
+print("\nResults:")
+print("Addition:", addition)
+print("Subtraction:", subtraction)
+print("Multiplication:", multiplication)
+print("Division:", division)
 
     # Task 2: 
 
@@ -35,4 +29,4 @@ last_name = input("Enter your last name: ").strip()
 
 full_name = first_name + " " + last_name
 
-print("\nHello,", full_name + "! Welcome!")
+print("\nHello,", full_name + "! Welcome to python program")
